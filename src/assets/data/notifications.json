@@ -1,0 +1,73 @@
+[
+    {
+        "user" : "Mark Webber",
+        "userProfileImgSrc": "/images/avatar-mark-webber.webp",
+        "action": "reacted to your recent post",
+        "target": "My first tournament today",
+        "since": "1m ago",
+        "messageAttached": "",
+        "relatedImgSrc": "",
+        "read": "false"
+    },
+    {
+        "user" : "Angela Gray",
+        "userProfileImgSrc": "/images/avatar-angela-gray.webp",
+        "action": "followed you",
+        "target": "",
+        "since": "5m ago",
+        "messageAttached": "",
+        "relatedImgSrc": "",
+        "read": "false"
+    },
+    {
+        "user" : "Jacob Thompson",
+        "userProfileImgSrc": "/images/avatar-jacob-thompson.webp",
+        "action": "has joined your group",
+        "target": "Chess Club",
+        "since": "1 day ago",
+        "messageAttached": "",
+        "relatedImgSrc": "",
+        "read": "false"
+    },
+    {
+        "user" : "Rizky Hasanuddin",
+        "userProfileImgSrc": "/images/avatar-rizky-hasanuddin.webp",
+        "action": "sent you a private message",
+        "target": "",
+        "since": "5 days ago",
+        "messageAttached": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and i'm already having lost of fun and improving my game.",
+        "relatedImgSrc": "",
+        "read": "true"
+    },
+    {
+        "user" : "Kimberly Smith",
+        "userProfileImgSrc": "/images/avatar-kimberly-smith.webp",
+        "action": "commented on your picture",
+        "target": "",
+        "since": "1 week ago",
+        "messageAttached": "",
+        "relatedImgSrc": "/images/chess-board.webp",
+        "read": "true"
+    },
+    {
+        "user" : "Nathan Peterson",
+        "userProfileImgSrc": "/images/avatar-nathan-peterson.webp",
+        "action": "reacted to your recent post",
+        "target": "5 end-game strategies to increase your win rate",
+        "since": "2 weeks ago",
+        "messageAttached": "",
+        "relatedImgSrc": "",
+        "read": "true"
+    },
+    {
+        "user" : "Anna Kim",
+        "userProfileImgSrc": "/images/avatar-anna-kim.webp",
+        "action": "left the group",
+        "target": "Chess Club",
+        "since": "2 weeks ago",
+        "messageAttached": "",
+        "relatedImgSrc": "",
+        "read": "true"
+    }
+
+]
