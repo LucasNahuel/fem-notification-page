@@ -4,14 +4,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
 
-import notificationsData from './assets/data/notifications.json';
+
 
 
 class Notification extends React.Component {
 
   constructor(props){
     super(props);
-    console.log(props);
+    this.state = props.value;
   }
 
 
@@ -59,7 +59,7 @@ class Notification extends React.Component {
   }
 
   showUnreadPoint(){
-    if(this.props.value.read === "false"){
+    if(this.state.read === "false"){
       return <div className='notification-point'></div>
     }
 
@@ -79,39 +79,73 @@ class Notification extends React.Component {
 
 }
 
-function App() {
+class App extends React.Component{
 
-  return (
+  constructor(props){
+    super(props);
+    this.state = { notifs : props.value, newNotificationsCount : 0 };
+
+    console.log(this.state.notifs);
+
+    for(let i = 0; i< this.state.notifs.length; i++){
+      if(this.state.notifs[i].read === "false"){
+        this.state.newNotificationsCount = this.state.newNotificationsCount + 1;
+      }
+    }
+
+  }
+
+  render(){
+    return(
     <div id='root-div'>
       <div className='notification-page-header'>
         <div className='notification-title-container'>
           <h2>Notifications</h2>
-          <div className='notification-count'>3</div>
+          {this.renderNewNotificationsCount()}
+          
         </div>
 
-        <button className='mark-as-read-button'>
+        <button className='mark-as-read-button' onClick={() => this.markAllAsRead()}>
           Mark all as read
         </button>
-        
+
       </div>
       <ul className='notification-list'>
 
-        {printNotifications()}
+        {this.printNotifications()}
 
       </ul>
     </div>
-  );
+  )
+  }
+
+  renderNewNotificationsCount(){
+    if(this.state.newNotificationsCount > 0) return <div className='notification-count'>{this.state.newNotificationsCount}</div>;
+  }
+
+  markAllAsRead(){
+    console.log(this.state);
+    for(let i = 0 ; i< this.state.notifs.length; i++){
+      this.state.notifs[i].read = "true";
+      console.log(this.state.notifs[i]);
+    }
+
+    let newNotifs = this.state.notifs;
+    let newNotificationsCount = 0;
+    this.setState({notifs : newNotifs, newNotificationsCount});
+  }
+
+  printNotifications(){
+    let i = 0;
+    let notifs = [];
+    while(i < this.state.notifs.length){
+      notifs.push(<Notification value={this.state.notifs[i]}></Notification>);
+      i= i+1;
+    }
+    return notifs;
+  }
 }
 
-function printNotifications(){
-  let i = 0;
-  let notifs = [];
-  while(i < notificationsData.length){
-    notifs.push(<Notification value={notificationsData[i]}></Notification>);
-    i= i+1;
-  }
-  return notifs;
-}
 
 
 
