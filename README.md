@@ -29,10 +29,10 @@ Users should be able to:
 
 ### Screenshot
 
-[desktop, unread](./src/assets/screenshots/localhost_3000_(3).png)
-[desktop, read](./src/assets/screenshots/localhost_3000_.png)
-[mobile, unread](./src/assets/screenshots/localhost_3000_(2).png)
-[mobile, read](./src/assets/screenshots/localhost_3000_(1).png)
+![desktop, unread](./src/assets/screenshots/localhost_3000_(3).png)
+![desktop, read](./src/assets/screenshots/localhost_3000_.png)
+![mobile, unread](./src/assets/screenshots/localhost_3000_(2).png)
+![mobile, read](./src/assets/screenshots/localhost_3000_(1).png)
 
 
 ### Links
