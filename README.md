@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [notification-page-app github page](https://github.com/LucasNahuel/fem-notification-page.git)
-- Live Site URL: [live notification-page-app deployment](to be deployed)
+- Live Site URL: [live notification-page-app deployment](https://fem-notification-page-navy.vercel.app/)
 
 ## My process
 
