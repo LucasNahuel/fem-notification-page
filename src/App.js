@@ -85,8 +85,6 @@ class App extends React.Component{
     super(props);
     this.state = { notifs : props.value, newNotificationsCount : 0 };
 
-    console.log(this.state.notifs);
-
     for(let i = 0; i< this.state.notifs.length; i++){
       if(this.state.notifs[i].read === "false"){
         this.state.newNotificationsCount = this.state.newNotificationsCount + 1;
@@ -124,10 +122,8 @@ class App extends React.Component{
   }
 
   markAllAsRead(){
-    console.log(this.state);
     for(let i = 0 ; i< this.state.notifs.length; i++){
       this.state.notifs[i].read = "true";
-      console.log(this.state.notifs[i]);
     }
 
     let newNotifs = this.state.notifs;
